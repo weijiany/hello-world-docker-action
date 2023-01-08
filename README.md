@@ -1,23 +1,17 @@
-# Hello world docker action
+# A Custom Github Action for Shell Check
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+This action uses shell check to scan specific dirs.
 
 ## Inputs
 
-## `who-to-greet`
+## `dir`
 
-**Required** The name of the person to greet. Default `"World"`.
-
-## Outputs
-
-## `time`
-
-The time we greeted you.
+**Required** Specific which dir need to scan.
 
 ## Example usage
 
 ```yaml
-uses: actions/hello-world-docker-action@v2
+uses: weijiany/shellcheck-action@v0.1.0
 with:
-  who-to-greet: 'Mona the Octocat'
+  dir: '.'
 ```
